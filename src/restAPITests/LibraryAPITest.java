@@ -9,6 +9,7 @@ import java.io.IOException;
 import java.io.Reader;
 import java.util.Properties;
 
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -40,6 +41,14 @@ public class LibraryAPITest {
 		prop = new Properties();
 		prop.load(fis);
 		
+		System.out.println("Dev Colab through Git deployment");
+	}
+	
+	@AfterTest
+	public void tearDownTests() {
+		
+		prop.clear();
+		System.out.println("Tests teardown completed");
 	}
 	
 	@Test
