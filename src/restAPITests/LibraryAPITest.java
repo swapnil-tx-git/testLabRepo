@@ -42,6 +42,7 @@ public class LibraryAPITest {
 		prop.load(fis);
 		
 		System.out.println("Dev Colab through Git deployment");
+		System.out.println("Features to be added to Dev branch only");
 	}
 	
 	@AfterTest
